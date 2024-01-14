@@ -3,7 +3,7 @@ import { MultiChatSocket, MultiChatWindow, useMultiChatLogic} from 'react-chat-e
 
 function ChatPage(props) {
     const chatProps = useMultiChatLogic(
-        process.env.PROJECT_KEY,
+        import.meta.env.PROJECT_KEY,
         props.user.data.username,
         props.user.secret
     )
